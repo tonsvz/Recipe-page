@@ -1,0 +1,461 @@
+@font-face {
+  font-family: "MyFont";
+  src: url(/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 52px;
+  height: 10rem;
+  gap: 0.5rem;
+}
+
+.front-text {
+  display: flex;
+  flex: 1;
+  /* background-color: yellow; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 67%;
+}
+
+.main-header h1 {
+  font-family: "MyFont";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+.check1 h1:nth-child(1) {
+  color: #333333;
+  font-family: "MyFont", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  font-style: normal;
+  margin-top: 1rem;
+}
+
+.main-header p {
+  margin-left: 30px;
+  width: 40%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4f4f4f;
+}
+
+.hero {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hero img {
+  max-width: 1200px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  /* background-color: red; */
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  transform: translateX(20px);
+}
+
+.cracker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cracker h1 {
+  font-family: "myFont";
+  transform: translateX(30px);
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.check1 p {
+  transform: translateY(-20px);
+}
+
+/* Card */
+
+.card-container-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-right: 250px;
+}
+.card {
+  font-family: "Montserrat";
+  position: relative;
+  display: flex;
+  width: 216px;
+  height: 317px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+
+  /* background-color: yellow; */
+}
+.yield {
+  display: grid;
+  background-color: tr;
+  width: 200px;
+  grid-template-columns: 50% 50%;
+}
+.yield-icon {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  z-index: 10;
+  transform: translateX(20px);
+  font-size: 20px;
+}
+
+.orange {
+  color: #f2994a !important;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 220px;
+  transform: translateX(-110px);
+}
+
+.card-info p {
+  color: #f2994a !important;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.card-info h2 {
+  font-weight: 700;
+  font-size: 10px;
+  color: #bdbdbd;
+  text-transform: uppercase;
+}
+
+.bl p {
+  color: #333333 !important;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.21rem;
+
+  /* background-color: blue; */
+}
+
+/* instructions */
+
+.instructions-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+}
+
+.title-instructions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  /* background-color: yellow; */
+  width: 66%;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2994a;
+  font-size: 24px;
+  width: 36px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: "MyFont", sans-serif;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+  font-size: 1rem !important;
+  font-style: normal !important;
+  color: #333333;
+}
+
+.footer a {
+  color: #333333;
+  border-bottom: 2px solid #333333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.instructions-steps {
+  color: #333333 !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  line-height: 24px !important;
+}
+
+/* media queries */
+
+@media (max-width: 710px) {
+  h1,
+  p {
+    padding-inline: 10px;
+  }
+
+  .card {
+    display: none;
+  }
+
+  .main-header {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-header h1 {
+    margin-left: 5px;
+    font-size: 24px;
+  }
+  .main-header p {
+    width: 100%;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding-top: 10px;
+    padding-inline: 12px;
+  }
+
+  .front-text {
+    width: calc(100% - 5%);
+  }
+
+  .main-content {
+    margin-top: 1.5rem;
+    width: 95vw;
+  }
+
+  .cracker {
+    width: 95vw;
+    position: relative;
+  }
+
+  .ingredients {
+    width: 95vw;
+    transform: translateX(0);
+  }
+
+  .cracker h1 {
+    transform: translateX(0);
+  }
+
+  input {
+    margin-left: 10px;
+  }
+
+  .check1 p {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  h1,
+  p {
+    padding-inline: 10px;
+  }
+
+  .card-container-2 {
+    transform: translateX(-250px);
+    opacity: 1;
+  }
+
+  .card-info p {
+    text-align: center;
+  }
+
+  .main-header {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-header h1 {
+    margin-left: 5px;
+    font-size: 24px;
+  }
+  .main-header p {
+    width: 100%;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding-top: 10px;
+    padding-inline: 12px;
+  }
+
+  .front-text {
+    width: calc(100% - 5%);
+  }
+
+  .main-content {
+    margin-top: 1.5rem;
+    width: 95vw;
+  }
+
+  .cracker {
+    width: 95vw;
+    position: relative;
+  }
+
+  .ingredients {
+    width: 95vw;
+    transform: translateX(0);
+  }
+
+  .cracker h1 {
+    transform: translateX(0);
+  }
+
+  .check1 p {
+    margin-left: 30px;
+    font-size: 12px;
+    width: 90%;
+  }
+
+  .main-header {
+    padding-top: 20px;
+  }
+
+  .instructions-container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .title-instructions {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .steps-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    /* background-color: yellow; */
+    width: 100%;
+  }
+
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2994a;
+    font-size: 24px;
+    width: 36px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: "MyFont", sans-serif;
+  }
+
+  .footer-container {
+    transform: translateX(-20px);
+  }
+}
